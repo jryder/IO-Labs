@@ -1,18 +1,15 @@
-package lab2;
+package lab3;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Scanner;
 
 public class Reader {
 
     public static void main(String[] args) throws IOException {
 
-	Scanner scan = new Scanner(System.in);
-	System.out.println("What line do you want to read?");
-	int lineRead = Integer.valueOf(scan.next());
+	int lineRead = 2;
 
 
 
@@ -53,10 +50,10 @@ public class Reader {
 
 	String[] ss;
 	ss = s.split("\\|");
-
-	for (String string : ss) {
-	    System.out.println(string);
+	
+	System.out.println(ss[3].toString());
+	
 	}
 
     }
-}
+
